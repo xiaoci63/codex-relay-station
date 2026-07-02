@@ -1,0 +1,38 @@
+# Codex Relay Station - Combined Docker Compose
+# ChatGPT Plus subscription -> API relay station for sharing with friends
+#
+# Architecture:
+#   User -> New API (port 3000) -> chat2api (port 5005) -> OpenAI
+#
+# Usage:
+#   docker compose up -d
+
+services:
+  new-api:
+    image: calciumion/new-api:latest
+    container_name: new-api
+    restart: always
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./data/new-api:/data
+    environment:
+      - TZ=Asia/Tokyo
+      - SYNC_FREQUENCY=120
+      - BATCH_UPDATE_ENABLED=true
+      - MEMORY_CACHE_ENABLED=true
+    mem_limit: 300m
+    memswap_limit: 500m
+    depends_on:
+      - chat2api
+
+  chat2api:
+    image: lanqian528/chat2api:latest
+    container_name: chat2api
+    restart: always
+    ports:
+      - "5005:5005"
+    environment:
+      - TZ=Asia/Tokyo
+    mem_limit: 200m
+    memswap_limit: 300m

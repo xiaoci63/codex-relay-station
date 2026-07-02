@@ -1,0 +1,24 @@
+Status: active
+Logging: on (low)
+Default: deny (incoming), allow (outgoing), deny (routed)
+New profiles: skip
+
+To                         Action      From
+--                         ------      ----
+8388/tcp                   ALLOW IN    Anywhere                  
+8388/udp                   ALLOW IN    Anywhere                  
+20830/tcp                  ALLOW IN    Anywhere                  
+28953/tcp                  ALLOW IN    Anywhere                  
+2096/tcp                   ALLOW IN    Anywhere                  
+3000/tcp                   ALLOW IN    Anywhere                  
+8080/tcp                   ALLOW IN    Anywhere                  
+5005/tcp                   ALLOW IN    Anywhere                  
+8388/tcp (v6)              ALLOW IN    Anywhere (v6)             
+8388/udp (v6)              ALLOW IN    Anywhere (v6)             
+20830/tcp (v6)             ALLOW IN    Anywhere (v6)             
+28953/tcp (v6)             ALLOW IN    Anywhere (v6)             
+2096/tcp (v6)              ALLOW IN    Anywhere (v6)             
+3000/tcp (v6)              ALLOW IN    Anywhere (v6)             
+8080/tcp (v6)              ALLOW IN    Anywhere (v6)             
+5005/tcp (v6)              ALLOW IN    Anywhere (v6)             
+

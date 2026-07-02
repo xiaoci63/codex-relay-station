@@ -1,0 +1,16 @@
+services:
+  new-api:
+    image: calciumion/new-api:latest
+    container_name: new-api
+    restart: always
+    ports:
+      - "3000:3000"
+    volumes:
+      - /opt/new-api/data:/data
+    environment:
+      - TZ=Asia/Tokyo
+      - SYNC_FREQUENCY=120
+      - BATCH_UPDATE_ENABLED=true
+      - MEMORY_CACHE_ENABLED=true
+    mem_limit: 300m
+    memswap_limit: 500m

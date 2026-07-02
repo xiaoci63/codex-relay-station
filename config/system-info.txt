@@ -1,0 +1,26 @@
+PRETTY_NAME="Ubuntu 22.04.5 LTS"
+NAME="Ubuntu"
+VERSION_ID="22.04"
+VERSION="22.04.5 LTS (Jammy Jellyfish)"
+VERSION_CODENAME=jammy
+ID=ubuntu
+ID_LIKE=debian
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+UBUNTU_CODENAME=jammy
+---
+               total        used        free      shared  buff/cache   available
+Mem:           951Mi       449Mi        67Mi       0.0Ki       434Mi       353Mi
+Swap:          2.3Gi       128Mi       2.2Gi
+---
+Filesystem      Size  Used Avail Use% Mounted on
+tmpfs            96M  1.6M   94M   2% /run
+/dev/vda2        23G  9.7G   13G  45% /
+tmpfs           476M     0  476M   0% /dev/shm
+tmpfs           5.0M     0  5.0M   0% /run/lock
+/dev/vda1       511M  6.1M  505M   2% /boot/efi
+tmpfs            96M  4.0K   96M   1% /run/user/0
+overlay          23G  9.7G   13G  45% /var/lib/docker/rootfs/overlayfs/c63980b1dcdf5a09cec9f7f34cd5e8c3d1cb6ad7d923ba3a11aa3b596118cb65
+overlay          23G  9.7G   13G  45% /var/lib/docker/rootfs/overlayfs/9c764147071b412c0a83f5ab9c68ddd9006d4c718d0a4c4496c21ab6f39aa500

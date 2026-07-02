@@ -1,0 +1,11 @@
+services:
+  chat2api:
+    image: lanqian528/chat2api:latest
+    container_name: chat2api
+    restart: always
+    ports:
+      - "5005:5005"
+    environment:
+      - TZ=Asia/Tokyo
+    mem_limit: 200m
+    memswap_limit: 300m

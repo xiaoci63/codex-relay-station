@@ -1,0 +1,23 @@
+# Data
+data/
+*.db
+*.sqlite
+
+# Sensitive
+.env
+*.key
+*.pem
+secrets/
+
+# OS
+.DS_Store
+Thumbs.db
+*.swp
+
+# Logs
+*.log
+
+# Temp
+tmp/
+temp/
+*.tmp
